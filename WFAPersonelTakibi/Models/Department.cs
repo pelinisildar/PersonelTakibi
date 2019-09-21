@@ -8,6 +8,6 @@ namespace WFAPersonelTakibi.Models
 {
     public enum Department
     {
-        Yazılım, Sistem, Grafik, Ofis, Muhasebe
+        Yazılım, Sistem, Grafik, Ofis, Muhasebe, Teknik_Çizim
     }
 }
