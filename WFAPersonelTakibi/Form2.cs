@@ -17,5 +17,33 @@ namespace WFAPersonelTakibi
         {
             InitializeComponent();
         }
+
+        private void CmsMenu_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void TsmDuzenle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TsmSil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TsmYeni_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            this.Hide();
+            frm.ShowDialog();
+
+        }
+
+        private void TsmDetay_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

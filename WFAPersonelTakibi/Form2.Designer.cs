@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.dgvEmployees = new System.Windows.Forms.DataGridView();
             this.cmsMenu = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.tsmDuzenle = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,31 +60,40 @@
             this.tsmYeni,
             this.tsmDetay});
             this.cmsMenu.Name = "metroContextMenu1";
-            this.cmsMenu.Size = new System.Drawing.Size(126, 92);
+            this.cmsMenu.Size = new System.Drawing.Size(181, 114);
+            this.cmsMenu.Opening += new System.ComponentModel.CancelEventHandler(this.CmsMenu_Opening);
             // 
             // tsmDuzenle
             // 
+            this.tsmDuzenle.Image = ((System.Drawing.Image)(resources.GetObject("tsmDuzenle.Image")));
             this.tsmDuzenle.Name = "tsmDuzenle";
-            this.tsmDuzenle.Size = new System.Drawing.Size(125, 22);
+            this.tsmDuzenle.Size = new System.Drawing.Size(180, 22);
             this.tsmDuzenle.Text = "Düzenle";
+            this.tsmDuzenle.Click += new System.EventHandler(this.TsmDuzenle_Click);
             // 
             // tsmSil
             // 
+            this.tsmSil.Image = ((System.Drawing.Image)(resources.GetObject("tsmSil.Image")));
             this.tsmSil.Name = "tsmSil";
-            this.tsmSil.Size = new System.Drawing.Size(125, 22);
+            this.tsmSil.Size = new System.Drawing.Size(180, 22);
             this.tsmSil.Text = "Sil";
+            this.tsmSil.Click += new System.EventHandler(this.TsmSil_Click);
             // 
             // tsmYeni
             // 
+            this.tsmYeni.Image = ((System.Drawing.Image)(resources.GetObject("tsmYeni.Image")));
             this.tsmYeni.Name = "tsmYeni";
-            this.tsmYeni.Size = new System.Drawing.Size(125, 22);
+            this.tsmYeni.Size = new System.Drawing.Size(180, 22);
             this.tsmYeni.Text = "Yeni Kayıt";
+            this.tsmYeni.Click += new System.EventHandler(this.TsmYeni_Click);
             // 
             // tsmDetay
             // 
+            this.tsmDetay.Image = ((System.Drawing.Image)(resources.GetObject("tsmDetay.Image")));
             this.tsmDetay.Name = "tsmDetay";
-            this.tsmDetay.Size = new System.Drawing.Size(125, 22);
+            this.tsmDetay.Size = new System.Drawing.Size(180, 22);
             this.tsmDetay.Text = "Detay";
+            this.tsmDetay.Click += new System.EventHandler(this.TsmDetay_Click);
             // 
             // Form2
             // 

@@ -17,5 +17,12 @@ namespace WFAPersonelTakibi
         {
             InitializeComponent();
         }
+
+        private void MetroLink1_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            this.Hide();
+            frm.ShowDialog();
+        }
     }
 }
